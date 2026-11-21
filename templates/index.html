@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ACEest Fitness & Gym</title>
+
+    <link
+        rel="stylesheet"
+        href="{{ url_for('static', filename='style.css') }}"
+    >
+</head>
+
+<body>
+
+    <header>
+        <h1>ACEest Fitness & Gym</h1>
+
+        <nav>
+            <a href="/">Home</a>
+            <a href="/members">Members</a>
+            <a href="/health">Health Check</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="hero">
+
+            <h2>Welcome to ACEest Fitness & Gym</h2>
+
+            <p>
+                Fitness management application developed as part
+                of the DevOps CI/CD implementation assignment.
+            </p>
+
+            <a href="/members" class="button">
+                View Members
+            </a>
+
+        </section>
+
+        <section class="features">
+
+            <div class="card">
+                <h3>Member Management</h3>
+                <p>
+                    Manage gym members and membership plans.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Fitness Tracking</h3>
+                <p>
+                    Support fitness and workout management.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>DevOps Enabled</h3>
+                <p>
+                    Automated testing, containerization and
+                    CI/CD deployment.
+                </p>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <p>
+            ACEest Fitness & Gym - DevOps Assignment
+        </p>
+
+    </footer>
+
+</body>
+
+</html>

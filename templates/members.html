@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Members - ACEest Fitness & Gym</title>
+
+    <link
+        rel="stylesheet"
+        href="{{ url_for('static', filename='style.css') }}"
+    >
+
+</head>
+
+<body>
+
+<header>
+
+    <h1>ACEest Fitness & Gym</h1>
+
+    <nav>
+        <a href="/">Home</a>
+        <a href="/members">Members</a>
+        <a href="/health">Health Check</a>
+    </nav>
+
+</header>
+
+
+<main>
+
+    <h2>Gym Members</h2>
+
+    <table>
+
+        <thead>
+
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Membership</th>
+            <th>Status</th>
+        </tr>
+
+        </thead>
+
+        <tbody>
+
+        {% for member in members %}
+
+        <tr>
+
+            <td>{{ member.id }}</td>
+            <td>{{ member.name }}</td>
+            <td>{{ member.membership }}</td>
+            <td>{{ member.status }}</td>
+
+        </tr>
+
+        {% endfor %}
+
+        </tbody>
+
+    </table>
+
+</main>
+
+
+<footer>
+
+    <p>
+        ACEest Fitness & Gym - DevOps Assignment
+    </p>
+
+</footer>
+
+</body>
+
+</html>
