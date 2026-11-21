@@ -1,9 +1,12 @@
-__pycache__/
-*.pyc
-.pytest_cache/
-.coverage
-html*ov/
+cat > .dockerignore <<'EOF'
+ven_fitness/
 venv/
 .venv/
-.env
-.DS_Store
+.git/
+__pycache__/
+.pytest_cache/
+htmlcov/
+.coverage
+*.pyc
+*.pyo
+EOF
