@@ -46,7 +46,7 @@ def test_health_endpoint(client):
 
     assert data["status"] == "healthy"
     assert data["application"] == "ACEest Fitness & Gym"
-    assert data["version"] == "1.0"
+    assert data["version"] == "2.0"
 
 
 def test_invalid_page(client):

@@ -68,7 +68,7 @@ def health():
     return jsonify({
         "status": "healthy",
         "application": "ACEest Fitness & Gym",
-        "version": "1.0"
+        "version": "2.0"
     }), 200
 if __name__ == "__main__":
     app.run(
